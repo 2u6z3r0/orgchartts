@@ -1,5 +1,5 @@
 {
-  "name": "OrgChart.ts",
+  "name": "orgchart.ts",
   "version": "0.0.3",
   "description": "organization chart plugin based on Typescript",
   "main": "build/orgchart.min.js",
