@@ -16,7 +16,8 @@
       "es6",
       "es7",
       "dom"
-    ]
+    ],
+    "outDir": "./build/js/"
   },
   "files": [
     "src/orgchart.ts"

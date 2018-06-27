@@ -1,9 +1,39 @@
 {
-  "name": "orgchart.ts",
-  "version": "0.0.3",
+  "name": "organizationchart",
+  "homepage": "https://github.com/dreppucci/orgchartts",
+  "keywords": [
+    "es5",
+    "ES2015",
+    "organization chart",
+    "tree-like",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "./build/js/orgchart.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreppucci/orgchartts.git"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "types": "./build/js/orgchart.d.ts",
+  "version": "0.0.6",
+  "author": {
+    "name": "dreppucci"
+  },
+  "bugs": {
+    "url": "https://github.com/dreppucci/orgchartts/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "html2canvas": "^0.5.0-beta4",
+    "mockjs": "^1.0.0",
+    "typescript": "^2.5.3"
+  },
+  "deprecated": false,
   "description": "organization chart plugin based on Typescript",
-  "main": "build/orgchart.min.js",
-  "scripts": {},
   "devDependencies": {
     "@angular/compiler": "^4.4.4",
     "@angular/core": "^4.4.4",
@@ -34,28 +64,5 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0",
     "zone.js": "^0.8.18"
-  },
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "html2canvas": "^0.5.0-beta4",
-    "mockjs": "^1.0.0",
-    "typescript": "^2.5.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dreppucci/orgchart.ts.git"
-  },
-  "keywords": [
-    "es5",
-    "ES2015",
-    "organization chart",
-    "tree-like",
-    "typescript"
-  ],
-  "author": "dreppucci",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dreppucci/orgchart.ts/issues"
-  },
-  "homepage": "https://github.com/dreppucci/orgchart.ts"
+  }
 }

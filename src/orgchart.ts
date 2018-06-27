@@ -1,6 +1,6 @@
 import * as html2canvas from 'html2canvas';
 
-export default class OrgChart {
+export class OrgChart {
 
   _name: any;
   options: any;
@@ -715,7 +715,7 @@ export default class OrgChart {
         // if the current node has the parent node, hide it recursively
         if (parent && grandfatherVisible) {
           this.hideParent(parent);
-        }else {
+        } else {
           this.currentNode = null;
         }
 
@@ -1970,7 +1970,7 @@ export default class OrgChart {
 
       reset = true;
       this.chart.style.transform = '';
-    }else {
+    } else {
       const matrixCopy = this.chart.style.transform.replace(/^\w*\(/, '').replace(')', '');
       const matrixValue = matrixCopy.split(/\s*,\s*/);
       zoomX = matrixValue[0];
@@ -2006,5 +2006,3 @@ export default class OrgChart {
     chartContainer.setAttribute( 'style', 'height: ' + chartHeight + 'px' );
   }
 }
-
-(window as any).OrgChart = OrgChart;

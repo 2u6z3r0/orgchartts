@@ -43,7 +43,7 @@ gulp.task('css', ['csslint', 'cleanCSS'], function() {
   return gulp.src('./src/*.css')
     .pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(rename('orgchart.min.css'))
+    .pipe(rename('orgchart.css'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/css'))
     .pipe(gulp.dest('demo/css'));
@@ -78,7 +78,7 @@ gulp.task('js', ['tslint', 'cleanJS'], function () {
       extensions: ['.ts']
   })
   .bundle()
-  .pipe(source('orgchart.min.js'))
+  .pipe(source('orgchart.js'))
   .pipe(buffer())
   .pipe(sourcemaps.init({loadMaps: true}))
   .pipe(sourcemaps.write('./'))
